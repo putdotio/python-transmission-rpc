@@ -20,7 +20,6 @@ import json
 import calendar
 import datetime
 import unicodedata
-from typing import Dict, Tuple  # noqa
 
 import requests
 
