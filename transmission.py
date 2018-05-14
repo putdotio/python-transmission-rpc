@@ -156,7 +156,7 @@ class _TransmissionJSONDecoder(json.JSONDecoder):
          'nextScrapeTime'])
 
     def __init__(self, **kwargs):
-        return super().__init__(object_hook=self.object_hook, **kwargs)
+        return super(_TransmissionJSONDecoder, self).__init__(object_hook=self.object_hook, **kwargs)
 
     def object_hook(self, obj):
         for key, value in obj.items():
